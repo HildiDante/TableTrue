@@ -29,7 +29,13 @@ List<Questao> medio = [
   Questao("¬(Verdadeiro ∧ Falso) ∧ (Verdadeiro ∨ Falso)", true),
   Questao("(¬Verdadeiro ∧ ¬Falso) ∨ Verdadeiro", true),
   Questao("¬(Verdadeiro ∧ (Verdadeiro ∨ Falso))", false),
+  Questao("(¬(Verdadeiro ∨ Falso) ∧ Verdadeiro) ∨ Falso", false),
+  Questao("Verdadeiro ∨ (¬Verdadeiro ∧ (Verdadeiro ∨ Falso))", true),
+  Questao("¬(¬(Verdadeiro ∧ Falso) ∨ Verdadeiro)", false),
+  Questao("Verdadeiro ∧ ¬(Falso ∨ Verdadeiro)", false),
+  Questao("Falso ∨ (Verdadeiro ∧ (¬Verdadeiro ∨ Falso))", true),
 ];
+
 
 List<Questao> dificil = [
   Questao("¬((Verdadeiro ∧ Falso) ∨ (¬Verdadeiro ∧ Verdadeiro))", true),
@@ -48,4 +54,10 @@ List<Questao> dificil = [
   Questao(
       "¬(¬(Verdadeiro ∧ (Falso ∨ ¬Verdadeiro)) ∨ (Verdadeiro ∧ Verdadeiro))",
       false),
+  Questao("¬(Verdadeiro ∨ (¬(Falso ∨ Verdadeiro) ∧ Verdadeiro))", true),
+  Questao("(Verdadeiro ∧ (Falso ∨ (¬Verdadeiro ∧ Verdadeiro)))", false),
+  Questao("¬((Verdadeiro ∧ Falso) ∨ (¬Verdadeiro ∧ (Falso ∨ Verdadeiro)))", true),
+  Questao("(¬(Verdadeiro ∨ (Falso ∧ Verdadeiro)) ∧ (Falso ∨ ¬Verdadeiro))", false),
+  Questao("((Verdadeiro ∧ (¬Falso ∨ Falso)) ∨ ¬Verdadeiro) ∧ Verdadeiro", true),
 ];
+
