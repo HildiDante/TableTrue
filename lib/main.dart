@@ -160,60 +160,56 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             );
           },
-          child: SizedBox(
-            width: MediaQuery.of(context).size.width * 0.95,
-            height: MediaQuery.of(context).size.height * 0.09,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  imagem,
-                  width: MediaQuery.of(context).size.width * 0.08,
-                  height: MediaQuery.of(context).size.height * 0.08,
-                ),
-                Padding(padding: EdgeInsets.only(left: 25)),
-                Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.56,
-                          child: Text(
-                            'Complete o Nível $difuculdade',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500),
-                          ),
+          child:Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                imagem,
+                width: MediaQuery.of(context).size.width * 0.08,
+                height: MediaQuery.of(context).size.height * 0.08,
+              ),
+              Padding(padding: EdgeInsets.only(left: 25)),
+              Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.56,
+                        child: Text(
+                          'Complete o Nível $difuculdade',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500),
                         ),
-                        Icon(Icons.arrow_forward_ios, color: Colors.white),
-                      ],
-                    ),
-                    SizedBox(height: 10.0),
-                    LinearPercentIndicator(
-                      width: MediaQuery.of(context).size.width * 0.66,
-                      animation: true,
-                      lineHeight: 25.0,
-                      animationDuration: 1000,
-                      percent:
-                          (min(double.parse(porcentagem.toString()), 10) / 10),
-                      center: Text(
-                        "${min(porcentagem, 10)}/10",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500),
                       ),
-                      linearStrokeCap: LinearStrokeCap.roundAll,
-                      progressColor: fontPrincipal,
-                      backgroundColor: embaixoBorda,
-                      barRadius: Radius.circular(14),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+                      Icon(Icons.arrow_forward_ios, color: Colors.white),
+                    ],
+                  ),
+                  SizedBox(height: 10.0),
+                  // LinearPercentIndicator(
+                  //   width: MediaQuery.of(context).size.width * 0.66,
+                  //   animation: true,
+                  //   lineHeight: 25.0,
+                  //   animationDuration: 1000,
+                  //   percent:
+                  //       (min(double.parse(porcentagem.toString()), 10) / 10),
+                  //   center: Text(
+                  //     "${min(porcentagem, 10)}/10",
+                  //     style: TextStyle(
+                  //         color: Colors.white,
+                  //         fontSize: 18,
+                  //         fontWeight: FontWeight.w500),
+                  //   ),
+                  //   linearStrokeCap: LinearStrokeCap.roundAll,
+                  //   progressColor: fontPrincipal,
+                  //   backgroundColor: embaixoBorda,
+                  //   barRadius: Radius.circular(14),
+                  // ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
